@@ -1,0 +1,97 @@
+{
+  "website": {
+    "name": "Civil Success",
+    "version": "2.0"
+  },
+
+  "subjects": [
+    {
+      "id": "building-materials",
+      "title": "Building Materials",
+      "icon": "🏗️",
+      "category": "SSC JE",
+      "featured": true,
+      "notes": [],
+      "mcqs": [],
+      "tests": [],
+      "pdfs": []
+    },
+    {
+      "id": "concrete-technology",
+      "title": "Concrete Technology",
+      "icon": "🧱",
+      "category": "SSC JE",
+      "featured": true,
+      "notes": [],
+      "mcqs": [],
+      "tests": [],
+      "pdfs": []
+    },
+    {
+      "id": "rcc-design",
+      "title": "RCC Design",
+      "icon": "🏢",
+      "category": "SSC JE",
+      "featured": true,
+      "notes": [],
+      "mcqs": [],
+      "tests": [],
+      "pdfs": []
+    },
+    {
+      "id": "surveying",
+      "title": "Surveying",
+      "icon": "📐",
+      "category": "SSC JE",
+      "featured": true,
+      "notes": [],
+      "mcqs": [],
+      "tests": [],
+      "pdfs": []
+    },
+    {
+      "id": "soil-mechanics",
+      "title": "Soil Mechanics",
+      "icon": "🌍",
+      "category": "SSC JE",
+      "featured": true,
+      "notes": [],
+      "mcqs": [],
+      "tests": [],
+      "pdfs": []
+    },
+    {
+      "id": "fluid-mechanics",
+      "title": "Fluid Mechanics",
+      "icon": "💧",
+      "category": "SSC JE",
+      "featured": true,
+      "notes": [],
+      "mcqs": [],
+      "tests": [],
+      "pdfs": []
+    },
+    {
+      "id": "estimating-costing",
+      "title": "Estimating, Costing & Valuation",
+      "icon": "📊",
+      "category": "SSC JE",
+      "featured": true,
+      "notes": [],
+      "mcqs": [],
+      "tests": [],
+      "pdfs": []
+    },
+    {
+      "id": "environmental",
+      "title": "Environmental Engineering",
+      "icon": "🌱",
+      "category": "SSC JE",
+      "featured": true,
+      "notes": [],
+      "mcqs": [],
+      "tests": [],
+      "pdfs": []
+    }
+  ]
+}
