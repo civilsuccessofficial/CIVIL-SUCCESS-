@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Building Materials | Civil Success</title>
@@ -19,208 +21,595 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f4f7fc;
+
+background:#eef3f9;
+
 }
 
 header{
+
 background:linear-gradient(135deg,#0D47A1,#1976D2);
-padding:35px 20px;
+
+padding:40px 20px;
+
 text-align:center;
-color:#fff;
-box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+color:white;
+
+box-shadow:0 8px 25px rgba(0,0,0,.15);
+
 }
 
 header h1{
-font-size:32px;
+
+font-size:34px;
+
 font-weight:700;
+
 }
 
 header p{
+
 margin-top:8px;
+
+font-size:16px;
+
 opacity:.9;
+
 }
 
 .search{
-max-width:700px;
-margin:25px auto;
+
+max-width:800px;
+
+margin:30px auto;
+
 padding:0 15px;
+
 }
 
 .search input{
+
 width:100%;
-padding:15px;
+
+padding:16px;
+
 border:none;
-border-radius:12px;
-font-size:16px;
+
 outline:none;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+border-radius:14px;
+
+font-size:17px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
 }
 
 .container{
-max-width:900px;
+
+max-width:1100px;
+
 margin:auto;
+
 padding:20px;
+
 }
 
-.chapter{
+.section-title{
+
+font-size:28px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+color:#1565C0;
+
+}
+
+.chapter-card{
+
+background:white;
+
+border-radius:18px;
+
+padding:22px;
+
+margin-bottom:18px;
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
-padding:18px;
-margin-bottom:15px;
-background:#fff;
-border-radius:14px;
+
 text-decoration:none;
+
 color:#222;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
 transition:.3s;
-border-left:5px solid #1565C0;
+
+border-left:6px solid #1565C0;
+
 }
 
-.chapter:hover{
-transform:translateY(-4px);
-background:#eef5ff;
+.chapter-card:hover{
+
+transform:translateY(-6px);
+
+background:#f8fbff;
+
 }
 
 .left{
+
 display:flex;
+
 align-items:center;
-gap:15px;
+
+gap:18px;
+
 }
 
 .icon{
-font-size:28px;
+
+width:60px;
+
+height:60px;
+
+border-radius:15px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+background:#1565C0;
+
+color:white;
+
 }
 
-.title{
-font-size:18px;
-font-weight:600;
+.info h2{
+
+font-size:22px;
+
+margin-bottom:5px;
+
+}
+
+.info p{
+
+font-size:14px;
+
+color:#666;
+
 }
 
 .arrow{
-font-size:28px;
-font-weight:bold;
+
+font-size:30px;
+
 color:#1565C0;
+
+font-weight:bold;
+
 }
 
 .star{
+
 color:#ff9800;
-margin-right:6px;
+
 }
 
-.back{
-display:block;
-text-align:center;
-margin-top:25px;
+.action-bar{
+
+display:flex;
+
+gap:12px;
+
+margin-top:10px;
+
+flex-wrap:wrap;
+
+}
+
+.action{
+
 background:#1565C0;
-color:#fff;
-padding:15px;
-text-decoration:none;
-border-radius:12px;
-font-weight:600;
-}
 
-.back:hover{
+color:white;
+
+padding:8px 14px;
+
+border-radius:8px;
+
+font-size:13px;
+
+}
+  .action:hover{
 background:#0D47A1;
 }
 
+@media(max-width:768px){
+
+.chapter-card{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+.left{
+
+width:100%;
+
+}
+
+.arrow{
+
+display:none;
+
+}
+
+.action-bar{
+
+width:100%;
+
+}
+
+.action{
+
+flex:1;
+
+text-align:center;
+
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
+
 <h1>🏗️ Building Materials</h1>
+
 <p>SSC JE Civil Engineering | Civil Success</p>
+
 </header>
 
 <div class="search">
-<input type="text" id="searchBox" placeholder="🔍 Search Chapter...">
+
+<input
+type="text"
+id="searchBox"
+placeholder="🔍 Search Chapter...">
+
 </div>
 
 <div class="container">
 
-<a href="#" class="chapter">
+<h2 class="section-title">
+
+⭐ Important Chapters
+
+</h2>
+
+<a href="chapter.html?id=introduction" class="chapter-card">
+
 <div class="left">
-<div class="icon">⭐</div>
-<div class="title">Introduction to Building Materials</div>
+
+<div class="icon">📘</div>
+
+<div class="info">
+
+<h2>Introduction</h2>
+
+<p>Basic concepts of Building Materials</p>
+
+<div class="action-bar">
+
+<span class="action">📖 Notes</span>
+
+<span class="action">📄 PDF</span>
+
+<span class="action">❓ MCQ</span>
+
+<span class="action">🧪 Test</span>
+
 </div>
-<div class="arrow">›</div>
+
+</div>
+
+</div>
+
+<div class="arrow">➜</div>
+
 </a>
 
-<a href="#" class="chapter">
+<a href="chapter.html?id=bricks" class="chapter-card">
+
 <div class="left">
+
 <div class="icon">🧱</div>
-<div class="title">Bricks</div>
+
+<div class="info">
+
+<h2>Bricks</h2>
+
+<p>Manufacturing, Tests, Classification</p>
+
+<div class="action-bar">
+
+<span class="action">📖 Notes</span>
+
+<span class="action">📄 PDF</span>
+
+<span class="action">❓ MCQ</span>
+
+<span class="action">🧪 Test</span>
+
 </div>
-<div class="arrow">›</div>
+
+</div>
+
+</div>
+
+<div class="arrow">➜</div>
+
 </a>
 
-<a href="#" class="chapter">
+<a href="chapter.html?id=stones" class="chapter-card">
+
 <div class="left">
+
 <div class="icon">🪨</div>
-<div class="title">Stones</div>
+
+<div class="info">
+
+<h2>Stones</h2>
+
+<p>Properties, Dressing, Uses</p>
+
+<div class="action-bar">
+
+<span class="action">📖 Notes</span>
+
+<span class="action">📄 PDF</span>
+
+<span class="action">❓ MCQ</span>
+
+<span class="action">🧪 Test</span>
+
 </div>
-<div class="arrow">›</div>
+
+</div>
+
+</div>
+
+<div class="arrow">➜</div>
+
 </a>
 
-<a href="#" class="chapter">
+<a href="chapter.html?id=cement" class="chapter-card">
+
 <div class="left">
+
 <div class="icon">🏗️</div>
-<div class="title">Cement</div>
-</div>
-<div class="arrow">›</div>
-</a>
 
-<a href="#" class="chapter">
+<div class="info">
+
+<h2>Cement</h2>
+
+<p>Manufacturing, Types & Tests</p>
+
+<div class="action-bar">
+
+<span class="action">📖 Notes</span>
+
+<span class="action">📄 PDF</span>
+
+<span class="action">❓ MCQ</span>
+
+<span class="action">🧪 Test</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="arrow">➜</div>
+
+</a>
+<a href="chapter.html?id=lime" class="chapter-card">
+
 <div class="left">
+
 <div class="icon">🏠</div>
-<div class="title">Lime</div>
+
+<div class="info">
+
+<h2>Lime</h2>
+
+<p>Types, Properties & Uses</p>
+
+<div class="action-bar">
+
+<span class="action">📖 Notes</span>
+<span class="action">📄 PDF</span>
+<span class="action">❓ MCQ</span>
+<span class="action">🧪 Test</span>
+
 </div>
-<div class="arrow">›</div>
+
+</div>
+
+</div>
+
+<div class="arrow">➜</div>
+
 </a>
 
-<a href="#" class="chapter">
+<a href="chapter.html?id=timber" class="chapter-card">
+
 <div class="left">
+
 <div class="icon">🌲</div>
-<div class="title">Timber</div>
+
+<div class="info">
+
+<h2>Timber</h2>
+
+<p>Seasoning, Defects & Preservation</p>
+
+<div class="action-bar">
+
+<span class="action">📖 Notes</span>
+<span class="action">📄 PDF</span>
+<span class="action">❓ MCQ</span>
+<span class="action">🧪 Test</span>
+
 </div>
-<div class="arrow">›</div>
+
+</div>
+
+</div>
+
+<div class="arrow">➜</div>
+
 </a>
 
-<a href="#" class="chapter">
+<a href="chapter.html?id=steel" class="chapter-card">
+
 <div class="left">
+
 <div class="icon">🔩</div>
-<div class="title">Steel</div>
+
+<div class="info">
+
+<h2>Steel</h2>
+
+<p>Types, Properties & Uses</p>
+
+<div class="action-bar">
+
+<span class="action">📖 Notes</span>
+<span class="action">📄 PDF</span>
+<span class="action">❓ MCQ</span>
+<span class="action">🧪 Test</span>
+
 </div>
-<div class="arrow">›</div>
+
+</div>
+
+</div>
+
+<div class="arrow">➜</div>
+
 </a>
 
-<a href="#" class="chapter">
+<a href="chapter.html?id=glass" class="chapter-card">
+
 <div class="left">
+
 <div class="icon">🪟</div>
-<div class="title">Glass</div>
+
+<div class="info">
+
+<h2>Glass</h2>
+
+<p>Types & Applications</p>
+
+<div class="action-bar">
+
+<span class="action">📖 Notes</span>
+<span class="action">📄 PDF</span>
+<span class="action">❓ MCQ</span>
+<span class="action">🧪 Test</span>
+
 </div>
-<div class="arrow">›</div>
+
+</div>
+
+</div>
+
+<div class="arrow">➜</div>
+
 </a>
 
-<a href="#" class="chapter">
+<a href="chapter.html?id=paints" class="chapter-card">
+
 <div class="left">
+
 <div class="icon">🎨</div>
-<div class="title">Paints & Varnishes</div>
+
+<div class="info">
+
+<h2>Paints & Varnishes</h2>
+
+<p>Composition, Properties & Uses</p>
+
+<div class="action-bar">
+
+<span class="action">📖 Notes</span>
+<span class="action">📄 PDF</span>
+<span class="action">❓ MCQ</span>
+<span class="action">🧪 Test</span>
+
 </div>
-<div class="arrow">›</div>
+
+</div>
+
+</div>
+
+<div class="arrow">➜</div>
+
 </a>
 
-<a href="#" class="chapter">
+<a href="chapter.html?id=misc" class="chapter-card">
+
 <div class="left">
+
 <div class="icon">🧪</div>
-<div class="title">Miscellaneous Materials</div>
+
+<div class="info">
+
+<h2>Miscellaneous Materials</h2>
+
+<p>Bitumen, Plastics & Modern Materials</p>
+
+<div class="action-bar">
+
+<span class="action">📖 Notes</span>
+<span class="action">📄 PDF</span>
+<span class="action">❓ MCQ</span>
+<span class="action">🧪 Test</span>
+
 </div>
-<div class="arrow">›</div>
+
+</div>
+
+</div>
+
+<div class="arrow">➜</div>
+
 </a>
 
-<a href="ssc-je.html" class="back">
+<a href="ssc-je.html" class="back-btn">
 ⬅ Back to SSC JE Subjects
 </a>
 
@@ -228,15 +617,13 @@ background:#0D47A1;
 
 <script>
 
-const searchBox=document.getElementById("searchBox");
+const search=document.getElementById("searchBox");
 
-searchBox.addEventListener("keyup",function(){
+search.addEventListener("keyup",function(){
 
 const value=this.value.toLowerCase();
 
-const cards=document.querySelectorAll(".chapter");
-
-cards.forEach(card=>{
+document.querySelectorAll(".chapter-card").forEach(card=>{
 
 const text=card.innerText.toLowerCase();
 
