@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Civil Success Admin Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+header{
+background:#1e3c72;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h2{
+font-size:24px;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:8px;
+background:red;
+color:white;
+cursor:pointer;
+font-size:16px;
+}
+
+.container{
+padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+text-decoration:none;
+color:#222;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-top:15px;
+margin-bottom:10px;
+}
+
+.icon{
+font-size:60px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>🏗 Civil Success Admin Panel</h2>
+
+<button id="logoutBtn">Logout</button>
+
+</header>
+
+<div class="container">
+
+<a class="card" href="../pdf/">
+<div class="icon">📄</div>
+<h3>PDF Manager</h3>
+<p>Manage PDFs</p>
+</a>
+
+<a class="card" href="../notes/">
+<div class="icon">📝</div>
+<h3>Notes Manager</h3>
+<p>Manage Notes</p>
+</a>
+
+<a class="card" href="../mcq/">
+<div class="icon">❓</div>
+<h3>MCQ Manager</h3>
+<p>Manage MCQ</p>
+</a>
+
+<a class="card" href="../test/">
+<div class="icon">🧪</div>
+<h3>Test Manager</h3>
+<p>Manage Tests</p>
+</a>
+
+<a class="card" href="../images/">
+<div class="icon">🖼</div>
+<h3>Image Manager</h3>
+<p>Manage Images</p>
+</a>
+
+</div>
+
+<script type="module" src="dashboard.js"></script>
+
+</body>
+</html>
