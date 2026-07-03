@@ -1,134 +1,77 @@
-// ===============================
-// Civil Success Chapter Engine
-// Version 2.0
-// ===============================
-
-// Read chapter id from URL
 const params = new URLSearchParams(window.location.search);
 const chapterId = params.get("id");
 
-// HTML Elements
-const chapterTitle = document.getElementById("chapterTitle");
-const subjectName = document.getElementById("subjectName");
-const chapterSummary = document.getElementById("chapterSummary");
-const topics = document.getElementById("topics");
+async function loadChapter() {
 
-const notesBtn = document.getElementById("notesBtn");
-const pdfBtn = document.getElementById("pdfBtn");
-const mcqBtn = document.getElementById("mcqBtn");
-const testBtn = document.getElementById("testBtn");
+  try {
 
-// Load Database
-async function loadChapter(){
+    const response = await fetch("content.json");
+    const data = await response.json();
 
-try{
+    let chapter = null;
+    let subject = null;
 
-const response = await fetch("content.json");
+    for (const s of data.subjects) {
+      const found = s.chapters.find(c => c.id === chapterId);
+      if (found) {
+        chapter = found;
+        subject = s;
+        break;
+      }
+    }
 
-if(!response.ok){
+    if (!chapter) {
+      document.getElementById("chapterTitle").textContent = "Chapter Not Found";
+      return;
+    }
 
-throw new Error("Database not found");
+    document.getElementById("chapterTitle").textContent = chapter.title;
+    document.getElementById("subjectName").textContent = subject.name;
 
-}
+    document.getElementById("chapterSummary").textContent =
+      chapter.summary || "Study Notes, PDF, MCQ and Mock Test.";
 
-const data = await response.json();
+    const topics = document.getElementById("topics");
+    topics.innerHTML = "";
 
-let chapter = null;
-let subject = null;
+    if (chapter.topics && chapter.topics.length) {
 
-// Find Subject & Chapter
+      chapter.topics.forEach(topic => {
 
-for(const s of data.subjects){
+        const li = document.createElement("li");
+        li.textContent = topic;
+        topics.appendChild(li);
 
-const found = s.chapters.find(c=>c.id===chapterId);
+      });
 
-if(found){
+    } else {
 
-chapter = found;
-subject = s;
+      topics.innerHTML = "<li>Topics will be updated soon.</li>";
 
-break;
+    }
 
-}
+    document.getElementById("notesBtn").href = chapter.notes || "#";
 
-}
+    document.getElementById("pdfBtn").href = chapter.pdf || "#";
+    document.getElementById("pdfBtn").target = "_blank";
 
-if(!chapter){
+    document.getElementById("mcqBtn").href = chapter.mcq || "#";
 
-chapterTitle.innerHTML="Chapter Not Found";
-subjectName.innerHTML="";
-chapterSummary.innerHTML="No data available.";
-topics.innerHTML="<li>Please check content.json</li>";
+    document.getElementById("testBtn").href = chapter.test || "#";
 
-return;
+  }
 
-}
-  // ===============================
-// Fill Page Data
-// ===============================
+  catch (err) {
 
-chapterTitle.textContent = chapter.title;
-subjectName.textContent = subject.name;
-chapterSummary.textContent =
-  chapter.summary || "Complete notes, PDF, MCQ and Mock Test available.";
+    console.error(err);
 
-// Clear old topics
-topics.innerHTML = "";
+    document.getElementById("chapterTitle").textContent = "Error";
 
-// Show topics if available
-if (chapter.topics && chapter.topics.length > 0) {
+    document.getElementById("chapterSummary").textContent =
+      "Unable to load chapter.";
 
-  chapter.topics.forEach(topic => {
-
-    const li = document.createElement("li");
-    li.textContent = topic;
-    topics.appendChild(li);
-
-  });
-
-} else {
-
-  topics.innerHTML = "<li>Topics will be added soon.</li>";
+  }
 
 }
-
-// ===============================
-// Buttons
-// ===============================
-
-// Notes
-notesBtn.href = chapter.notes
-  
-// ===============================
-// End of loadChapter()
-// ===============================
-
-} catch (error) {
-
-    console.error(error);
-
-    chapterTitle.textContent = "Error Loading Chapter";
-    subjectName.textContent = "Civil Success";
-    chapterSummary.textContent =
-        "Unable to load chapter data. Please try again later.";
-
-    topics.innerHTML = `
-        <li>Database not found.</li>
-        <li>Check content.json file.</li>
-        <li>Make sure chapter ID exists.</li>
-    `;
-
-    notesBtn.removeAttribute("href");
-    pdfBtn.removeAttribute("href");
-    mcqBtn.removeAttribute("href");
-    testBtn.removeAttribute("href");
-
-}
-
-}
-
-// ===============================
-// Start Application
-// ===============================
 
 loadChapter();
