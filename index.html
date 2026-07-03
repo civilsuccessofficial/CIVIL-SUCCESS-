@@ -1,161 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Civil Success</title>
+
+<title>Civil Success | SSC JE & RRB JE Notes</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f4f4f4;
-color:#333;
+
+background:#f5f7fb;
+
+color:#222;
+
 }
 
 header{
-background:#0d47a1;
+
+background:linear-gradient(135deg,#0D47A1,#1976D2);
+
+padding:18px 20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
 color:white;
-text-align:center;
-padding:50px 20px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+box-shadow:0 3px 15px rgba(0,0,0,.2);
+
 }
 
-header h1{
-font-size:42px;
-}
+.logo{
 
-header p{
-margin:15px 0;
-font-size:20px;
-}
+font-size:24px;
 
-.btn{
-display:inline-block;
-background:#ff9800;
-color:white;
-padding:12px 25px;
-text-decoration:none;
-border-radius:5px;
-font-weight:bold;
-}
+font-weight:700;
 
-nav{
-background:#222;
-text-align:center;
-padding:15px;
 }
 
 nav a{
+
 color:white;
+
 text-decoration:none;
-margin:15px;
-font-weight:bold;
+
+margin-left:18px;
+
+font-weight:500;
+
+}
+
+.hero{
+
+padding:60px 20px;
+
+text-align:center;
+
+background:linear-gradient(135deg,#1565C0,#42A5F5);
+
+color:white;
+
+}
+
+.hero img{
+
+width:120px;
+
+height:120px;
+
+border-radius:50%;
+
+background:white;
+
+padding:8px;
+
+margin-bottom:20px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.7;
+
+}
+
+.buttons{
+
+margin-top:30px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:15px 28px;
+
+background:#ff9800;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+background:#f57c00;
+
 }
 
 section{
-padding:40px 20px;
-max-width:900px;
+
+padding:50px 20px;
+
+max-width:1200px;
+
 margin:auto;
+
+}
+
+.title{
+
+font-size:32px;
+
+margin-bottom:30px;
+
+color:#1565C0;
+
+text-align:center;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
 }
 
 .card{
+
 background:white;
-padding:20px;
-margin:20px 0;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+
+padding:25px;
+
+border-radius:18px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+transition:.3s;
+
 }
 
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
+.card:hover{
+
+transform:translateY(-6px);
+
 }
+
+.card h3{
+
+margin-bottom:10px;
+
+color:#1565C0;
+
+}
+
+.card p{
+
+line-height:1.7;
+
+color:#555;
+
+}
+ @media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:12px;
+text-align:center;
+}
+
+nav a{
+margin:0 8px;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
 
- <img src="logo.png" alt="Civil Success Logo" width="120">
-<h1>Civil Success</h1>
-<p>Your Success Starts Here</p>
-<a href="#services" class="btn">Get Started</a>
-</header>
+<div class="logo">🏗️ Civil Success</div>
 
 <nav>
+
+<a href="index.html">Home</a>
+
+<a href="building-materials.html">Notes</a>
+
 <a href="#about">About</a>
-<a href="#services">Services</a>
+
 <a href="#contact">Contact</a>
+
 </nav>
 
+</header>
+
+<section class="hero">
+
+<img src="logo.png" alt="Civil Success Logo">
+
+<h1>Civil Success</h1>
+
+<p>
+
+Prepare for SSC JE & RRB JE Civil Engineering with
+high-quality Short Notes, PDFs and Exam-focused content.
+
+</p>
+
+<div class="buttons">
+
+<a class="btn" href="building-materials.html">
+
+📚 Start Learning
+
+</a>
+
+<a class="btn" href="notes.html">
+
+📄 PDF Notes
+
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Popular Subjects</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🏗️ Building Materials</h3>
+
+<p>Bricks, Stones, Cement, Lime, Timber, Steel and more.</p>
+
+<a class="btn" href="building-materials.html">Open</a>
+
+</div>
+
+<div class="card">
+
+<h3>🏢 Concrete Technology</h3>
+
+<p>Concrete, Mix Design, Admixtures, Workability and Tests.</p>
+
+<a class="btn" href="#">Coming Soon</a>
+
+</div>
+
+<div class="card">
+
+<h3>📐 Surveying</h3>
+
+<p>Chain Survey, Compass, Levelling, Theodolite and Total Station.</p>
+
+<a class="btn" href="#">Coming Soon</a>
+
+</div>
+
+<div class="card">
+
+<h3>🌍 Soil Mechanics</h3>
+
+<p>Soil Properties, Compaction, Permeability and Shear Strength.</p>
+
+<a class="btn" href="#">Coming Soon</a>
+
+</div>
+
+</div>
+
+</section>
+
 <section id="about">
-<h2>Welcome</h2>
-<p>
-Welcome to Civil Success.
-We provide Civil Engineering Notes, MCQs, Previous Year Papers,
-Study Materials, Interview Questions and Career Guidance.
-</p>
-</section>
 
-<section id="services">
-<h2>Our Services</h2>
-<a href="notes.html" style="text-decoration:none; color:inherit;">
-<div class="card">
-<h3>📚 Civil Engineering Notes</h3>
-<p>Subject wise Civil Engineering notes with easy explanations and PDF downloads.</p>
-</div>
-</a>
+<h2 class="title">About Civil Success</h2>
 
-<a href="mcq.html" style="text-decoration:none; color:inherit;">
-<div class="card">
-<h3>📝 MCQ Practice</h3>
-<p>Topic wise MCQs with answers.</p>
-</div>
-</a>
-
-
-<a href="papers.html" style="text-decoration:none; color:inherit;">
-<div class="card">
-<h3>📄 Previous Year Papers</h3>
-<p>Download university previous papers.</p>
-</div>
-</a>
-
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-
-<p>Email: civilsuccessofficial@gmail.com</p>
-
-<p>
-YouTube:
-<a href="https://youtube.com/@civilsuccessofficial">
-Civil Success
-</a>
-</p>
-
-<p>
-WhatsApp:
-<a href="https://wa.me/919999999999">
-Join WhatsApp
-</a>
-</p>
-
-</section>
-
-<footer>
-© 2025 Civil Success. All Rights Reserved.
-</footer>
-
-</body>
-</html>
+<p style="
