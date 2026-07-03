@@ -1,175 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>SSC JE Civil Engineering | Civil Success</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f4f7fb;
+background:#f4f7fc;
 }
 
 header{
-background:#0d47a1;
-color:white;
-padding:25px;
+background:linear-gradient(135deg,#0D47A1,#1976D2);
+padding:35px 20px;
+color:#fff;
 text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
 }
 
 header h1{
-font-size:30px;
+font-size:32px;
+font-weight:700;
 }
 
 header p{
 margin-top:8px;
-font-size:17px;
+font-size:16px;
+opacity:.9;
+}
+
+.search-box{
+max-width:700px;
+margin:25px auto;
+padding:0 15px;
+}
+
+.search-box input{
+width:100%;
+padding:15px;
+border:none;
+border-radius:12px;
+font-size:16px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+outline:none;
 }
 
 .container{
 max-width:900px;
-margin:25px auto;
-padding:15px;
+margin:auto;
+padding:20px;
 }
 
-.search{
-width:100%;
-padding:14px;
-border-radius:10px;
-border:1px solid #ccc;
-font-size:16px;
-margin-bottom:20px;
-}
-
-.subject{
+.subject-card{
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:white;
+background:#fff;
 padding:18px;
 margin-bottom:15px;
-border-radius:12px;
+border-radius:14px;
 text-decoration:none;
 color:#222;
-font-size:18px;
-font-weight:bold;
-box-shadow:0 4px 10px rgba(0,0,0,.08);
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 transition:.3s;
-border-left:6px solid #0d47a1;
+border-left:5px solid #1565C0;
 }
 
-.subject:hover{
+.subject-card:hover{
+transform:translateY(-4px);
 background:#eef5ff;
-transform:translateY(-2px);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+font-size:28px;
+}
+
+.subject-name{
+font-size:18px;
+font-weight:600;
 }
 
 .arrow{
-color:#ff9800;
-font-size:22px;
+font-size:28px;
+color:#1565C0;
+font-weight:bold;
 }
 
 .star{
 color:#ff9800;
+margin-right:6px;
 }
 
-.back{
-display:inline-block;
-margin-top:20px;
-background:#ff9800;
+.back-btn{
+display:block;
+text-align:center;
+background:#1565C0;
 color:white;
-padding:12px 25px;
 text-decoration:none;
-border-radius:8px;
-font-weight:bold;
+padding:15px;
+border-radius:12px;
+margin-top:25px;
+font-size:18px;
+font-weight:600;
 }
-</style>
 
+.back-btn:hover{
+background:#0D47A1;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-
 <h1>📘 SSC JE Civil Engineering</h1>
-
-<p>Select Any Subject</p>
-
+<p>Subject Wise Notes | Civil Success</p>
 </header>
+
+<div class="search-box">
+<input type="text" id="searchBox" placeholder="🔍 Search Subject...">
+</div>
 
 <div class="container">
 
-<input class="search" type="text" placeholder="🔍 Search Subject (Coming Soon)">
-
-<a href="building-materials.html" class="subject">
-    <span><span class="star">⭐</span> Building Materials</span>
-    <span class="arrow">›</span>
+<a href="building-materials.html" class="subject-card">
+<div class="left">
+<div class="subject-name"><span class="star">⭐</span>Building Materials</div>
+</div>
+<div class="arrow">›</div>
 </a>
 
-<a href="#" class="subject">
-<span><span class="star">⭐</span> Concrete Technology</span>
-<span class="arrow">›</span>
+<a href="concrete-technology.html" class="subject-card">
+<div class="left">
+<div class="subject-name"><span class="star">⭐</span>Concrete Technology</div>
+</div>
+<div class="arrow">›</div>
 </a>
 
-<a href="#" class="subject">
-<span><span class="star">⭐</span> RCC Design</span>
-<span class="arrow">›</span>
+<a href="rcc-design.html" class="subject-card">
+<div class="left">
+<div class="subject-name"><span class="star">⭐</span>RCC Design</div>
+</div>
+<div class="arrow">›</div>
 </a>
 
-<a href="#" class="subject">
-<span><span class="star">⭐</span> Surveying</span>
-<span class="arrow">›</span>
+<a href="surveying.html" class="subject-card">
+<div class="left">
+<div class="subject-name"><span class="star">⭐</span>Surveying</div>
+</div>
+<div class="arrow">›</div>
 </a>
 
-<a href="#" class="subject">
-<span><span class="star">⭐</span> Soil Mechanics</span>
-<span class="arrow">›</span>
+<a href="soil-mechanics.html" class="subject-card">
+<div class="left">
+<div class="subject-name"><span class="star">⭐</span>Soil Mechanics</div>
+</div>
+<div class="arrow">›</div>
 </a>
 
-<a href="#" class="subject">
-<span><span class="star">⭐</span> Fluid Mechanics</span>
-<span class="arrow">›</span>
+<a href="fluid-mechanics.html" class="subject-card">
+<div class="left">
+<div class="subject-name"><span class="star">⭐</span>Fluid Mechanics</div>
+</div>
+<div class="arrow">›</div>
 </a>
 
-<a href="#" class="subject">
-<span><span class="star">⭐</span> Estimating, Costing & Valuation</span>
-<span class="arrow">›</span>
+<a href="estimating-costing.html" class="subject-card">
+<div class="left">
+<div class="subject-name"><span class="star">⭐</span>Estimating, Costing & Valuation</div>
+</div>
+<div class="arrow">›</div>
 </a>
 
-<a href="#" class="subject">
-<span><span class="star">⭐</span> Environmental Engineering</span>
-<span class="arrow">›</span>
+<a href="environmental-engineering.html" class="subject-card">
+<div class="left">
+<div class="subject-name"><span class="star">⭐</span>Environmental Engineering</div>
+</div>
+<div class="arrow">›</div>
 </a>
 
-<a href="#" class="subject">
-<span>Irrigation Engineering</span>
-<span class="arrow">›</span>
+<a href="irrigation-engineering.html" class="subject-card">
+<div class="left">
+<div class="subject-name">Irrigation Engineering</div>
+</div>
+<div class="arrow">›</div>
 </a>
 
-<a href="#" class="subject">
-<span>Transportation Engineering</span>
-<span class="arrow">›</span>
+<a href="transportation-engineering.html" class="subject-card">
+<div class="left">
+<div class="subject-name">Transportation Engineering</div>
+</div>
+<div class="arrow">›</div>
 </a>
 
-<a href="#" class="subject">
-<span>Steel Design</span>
-<span class="arrow">›</span>
+<a href="steel-design.html" class="subject-card">
+<div class="left">
+<div class="subject-name">Steel Design</div>
+</div>
+<div class="arrow">›</div>
 </a>
 
-<a href="#" class="subject">
-<span>Theory of Structures</span>
-<span class="arrow">›</span>
+<a href="theory-of-structures.html" class="subject-card">
+<div class="left">
+<div class="subject-name">Theory of Structures</div>
+</div>
+<div class="arrow">›</div>
 </a>
 
-<a href="notes.html" class="back">⬅ Back to Notes</a>
+<a href="notes.html" class="back-btn">
+⬅ Back to Notes
+</a>
 
 </div>
+
+<script>
+
+const searchBox=document.getElementById("searchBox");
+
+searchBox.addEventListener("keyup",function(){
+
+const value=this.value.toLowerCase();
+
+const cards=document.querySelectorAll(".subject-card");
+
+cards.forEach(card=>{
+
+const text=card.innerText.toLowerCase();
+
+card.style.display=text.includes(value)?"flex":"none";
+
+});
+
+});
+
+</script>
 
 </body>
 </html>
