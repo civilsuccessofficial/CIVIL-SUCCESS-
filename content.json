@@ -1,97 +1,91 @@
 {
-  "website": {
-    "name": "Civil Success",
-    "version": "2.0"
-  },
-
   "subjects": [
     {
       "id": "building-materials",
-      "title": "Building Materials",
+      "name": "Building Materials",
       "icon": "🏗️",
-      "category": "SSC JE",
-      "featured": true,
-      "notes": [],
-      "mcqs": [],
-      "tests": [],
-      "pdfs": []
-    },
-    {
-      "id": "concrete-technology",
-      "title": "Concrete Technology",
-      "icon": "🧱",
-      "category": "SSC JE",
-      "featured": true,
-      "notes": [],
-      "mcqs": [],
-      "tests": [],
-      "pdfs": []
-    },
-    {
-      "id": "rcc-design",
-      "title": "RCC Design",
-      "icon": "🏢",
-      "category": "SSC JE",
-      "featured": true,
-      "notes": [],
-      "mcqs": [],
-      "tests": [],
-      "pdfs": []
-    },
-    {
-      "id": "surveying",
-      "title": "Surveying",
-      "icon": "📐",
-      "category": "SSC JE",
-      "featured": true,
-      "notes": [],
-      "mcqs": [],
-      "tests": [],
-      "pdfs": []
-    },
-    {
-      "id": "soil-mechanics",
-      "title": "Soil Mechanics",
-      "icon": "🌍",
-      "category": "SSC JE",
-      "featured": true,
-      "notes": [],
-      "mcqs": [],
-      "tests": [],
-      "pdfs": []
-    },
-    {
-      "id": "fluid-mechanics",
-      "title": "Fluid Mechanics",
-      "icon": "💧",
-      "category": "SSC JE",
-      "featured": true,
-      "notes": [],
-      "mcqs": [],
-      "tests": [],
-      "pdfs": []
-    },
-    {
-      "id": "estimating-costing",
-      "title": "Estimating, Costing & Valuation",
-      "icon": "📊",
-      "category": "SSC JE",
-      "featured": true,
-      "notes": [],
-      "mcqs": [],
-      "tests": [],
-      "pdfs": []
-    },
-    {
-      "id": "environmental",
-      "title": "Environmental Engineering",
-      "icon": "🌱",
-      "category": "SSC JE",
-      "featured": true,
-      "notes": [],
-      "mcqs": [],
-      "tests": [],
-      "pdfs": []
+      "chapters": [
+        {
+          "id": "introduction",
+          "title": "Introduction",
+          "pdf": "pdf/introduction.pdf",
+          "notes": "notes/introduction.html",
+          "mcq": "mcq/introduction.html",
+          "test": "test/introduction.html"
+        },
+        {
+          "id": "bricks",
+          "title": "Bricks",
+          "pdf": "pdf/bricks.pdf",
+          "notes": "notes/bricks.html",
+          "mcq": "mcq/bricks.html",
+          "test": "test/bricks.html"
+        },
+        {
+          "id": "stones",
+          "title": "Stones",
+          "pdf": "pdf/stones.pdf",
+          "notes": "notes/stones.html",
+          "mcq": "mcq/stones.html",
+          "test": "test/stones.html"
+        },
+        {
+          "id": "cement",
+          "title": "Cement",
+          "pdf": "pdf/cement.pdf",
+          "notes": "notes/cement.html",
+          "mcq": "mcq/cement.html",
+          "test": "test/cement.html"
+        },
+        {
+          "id": "lime",
+          "title": "Lime",
+          "pdf": "pdf/lime.pdf",
+          "notes": "notes/lime.html",
+          "mcq": "mcq/lime.html",
+          "test": "test/lime.html"
+        },
+        {
+          "id": "timber",
+          "title": "Timber",
+          "pdf": "pdf/timber.pdf",
+          "notes": "notes/timber.html",
+          "mcq": "mcq/timber.html",
+          "test": "test/timber.html"
+        },
+        {
+          "id": "steel",
+          "title": "Steel",
+          "pdf": "pdf/steel.pdf",
+          "notes": "notes/steel.html",
+          "mcq": "mcq/steel.html",
+          "test": "test/steel.html"
+        },
+        {
+          "id": "glass",
+          "title": "Glass",
+          "pdf": "pdf/glass.pdf",
+          "notes": "notes/glass.html",
+          "mcq": "mcq/glass.html",
+          "test": "test/glass.html"
+        },
+        {
+          "id": "paints",
+          "title": "Paints & Varnishes",
+          "pdf": "pdf/paints.pdf",
+          "notes": "notes/paints.html",
+          "mcq": "mcq/paints.html",
+          "test": "test/paints.html"
+        },
+        {
+          "id": "misc",
+          "title": "Miscellaneous Materials",
+          "pdf": "pdf/misc.pdf",
+          "notes": "notes/misc.html",
+          "mcq": "mcq/misc.html",
+          "test": "test/misc.html"
+        }
+      ]
     }
   ]
 }
