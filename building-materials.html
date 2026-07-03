@@ -1,283 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Building Materials | Civil Success</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-
-background:#eef3f9;
-
-}
-
-header{
-
-background:linear-gradient(135deg,#0D47A1,#1976D2);
-
-padding:40px 20px;
-
-text-align:center;
-
-color:white;
-
-box-shadow:0 8px 25px rgba(0,0,0,.15);
-
-}
-
-header h1{
-
-font-size:34px;
-
-font-weight:700;
-
-}
-
-header p{
-
-margin-top:8px;
-
-font-size:16px;
-
-opacity:.9;
-
-}
-
-.search{
-
-max-width:800px;
-
-margin:30px auto;
-
-padding:0 15px;
-
-}
-
-.search input{
-
-width:100%;
-
-padding:16px;
-
-border:none;
-
-outline:none;
-
-border-radius:14px;
-
-font-size:17px;
-
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-
-}
-
-.container{
-
-max-width:1100px;
-
-margin:auto;
-
-padding:20px;
-
-}
-
-.section-title{
-
-font-size:28px;
-
-font-weight:700;
-
-margin-bottom:20px;
-
-color:#1565C0;
-
-}
-
-.chapter-card{
-
-background:white;
-
-border-radius:18px;
-
-padding:22px;
-
-margin-bottom:18px;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-text-decoration:none;
-
-color:#222;
-
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-
-transition:.3s;
-
-border-left:6px solid #1565C0;
-
-}
-
-.chapter-card:hover{
-
-transform:translateY(-6px);
-
-background:#f8fbff;
-
-}
-
-.left{
-
-display:flex;
-
-align-items:center;
-
-gap:18px;
-
-}
-
-.icon{
-
-width:60px;
-
-height:60px;
-
-border-radius:15px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-font-size:30px;
-
-background:#1565C0;
-
-color:white;
-
-}
-
-.info h2{
-
-font-size:22px;
-
-margin-bottom:5px;
-
-}
-
-.info p{
-
-font-size:14px;
-
-color:#666;
-
-}
-
-.arrow{
-
-font-size:30px;
-
-color:#1565C0;
-
-font-weight:bold;
-
-}
-
-.star{
-
-color:#ff9800;
-
-}
-
-.action-bar{
-
-display:flex;
-
-gap:12px;
-
-margin-top:10px;
-
-flex-wrap:wrap;
-
-}
-
-.action{
-
-background:#1565C0;
-
-color:white;
-
-padding:8px 14px;
-
-border-radius:8px;
-
-font-size:13px;
-
-}
-  .action:hover{
-background:#0D47A1;
-}
-
-@media(max-width:768px){
-
-.chapter-card{
-
-flex-direction:column;
-
-align-items:flex-start;
-
-gap:15px;
-
-}
-
-.left{
-
-width:100%;
-
-}
-
-.arrow{
-
-display:none;
-
-}
-
-.action-bar{
-
-width:100%;
-
-}
-
-.action{
-
-flex:1;
-
-text-align:center;
-
-}
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -285,355 +14,282 @@ text-align:center;
 
 <header>
 
-<h1>🏗️ Building Materials</h1>
+<div class="navbar">
 
-<p>SSC JE Civil Engineering | Civil Success</p>
+<div class="logo">🏗️ Civil Success</div>
+
+<div class="menu">
+
+<a href="index.html">Home</a>
+
+<a href="building-materials.html">Building Materials</a>
+
+</div>
 
 </header>
 
-<div class="search">
+<section class="hero">
 
-<input
-type="text"
-id="searchBox"
-placeholder="🔍 Search Chapter...">
+<h1>🏗️ Building Materials</h1>
 
-</div>
+<p>
+
+SSC JE • RRB JE Short Notes
+
+</p>
+
+</section>
 
 <div class="container">
 
 <h2 class="section-title">
 
-⭐ Important Chapters
+Choose Chapter
 
 </h2>
 
-<a href="chapter.html?id=introduction" class="chapter-card">
+<div class="subject-grid">
 
-<div class="left">
+<div class="subject-card">
 
-<div class="icon">📘</div>
+<div class="subject-icon">🧱</div>
 
-<div class="info">
+<h3>Bricks</h3>
 
-<h2>Introduction</h2>
+<p>
 
-<p>Basic concepts of Building Materials</p>
+Manufacturing, Classification,
+Properties & Tests.
 
-<div class="action-bar">
+</p>
 
-<span class="action">📖 Notes</span>
+<a href="notes/bricks.html" class="badge">
 
-<span class="action">📄 PDF</span>
-
-<span class="action">❓ MCQ</span>
-
-<span class="action">🧪 Test</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="arrow">➜</div>
+Open Notes →
 
 </a>
 
-<a href="chapter.html?id=bricks" class="chapter-card">
-
-<div class="left">
-
-<div class="icon">🧱</div>
-
-<div class="info">
-
-<h2>Bricks</h2>
-
-<p>Manufacturing, Tests, Classification</p>
-
-<div class="action-bar">
-
-<span class="action">📖 Notes</span>
-
-<span class="action">📄 PDF</span>
-
-<span class="action">❓ MCQ</span>
-
-<span class="action">🧪 Test</span>
-
 </div>
 
-</div>
+<div class="subject-card">
 
-</div>
+<div class="subject-icon">🪨</div>
 
-<div class="arrow">➜</div>
+<h3>Stones</h3>
 
-</a>
+<p>
 
-<a href="chapter.html?id=stones" class="chapter-card">
+Classification,
+Properties &
+Uses.
 
-<div class="left">
+</p>
 
-<div class="icon">🪨</div>
+<a href="#" class="badge">
 
-<div class="info">
+Coming Soon
 
-<h2>Stones</h2>
-
-<p>Properties, Dressing, Uses</p>
-
-<div class="action-bar">
-
-<span class="action">📖 Notes</span>
-
-<span class="action">📄 PDF</span>
-
-<span class="action">❓ MCQ</span>
-
-<span class="action">🧪 Test</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="arrow">➜</div>
-
-</a>
-
-<a href="chapter.html?id=cement" class="chapter-card">
-
-<div class="left">
-
-<div class="icon">🏗️</div>
-
-<div class="info">
-
-<h2>Cement</h2>
-
-<p>Manufacturing, Types & Tests</p>
-
-<div class="action-bar">
-
-<span class="action">📖 Notes</span>
-
-<span class="action">📄 PDF</span>
-
-<span class="action">❓ MCQ</span>
-
-<span class="action">🧪 Test</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="arrow">➜</div>
-
-</a>
-<a href="chapter.html?id=lime" class="chapter-card">
-
-<div class="left">
-
-<div class="icon">🏠</div>
-
-<div class="info">
-
-<h2>Lime</h2>
-
-<p>Types, Properties & Uses</p>
-
-<div class="action-bar">
-
-<span class="action">📖 Notes</span>
-<span class="action">📄 PDF</span>
-<span class="action">❓ MCQ</span>
-<span class="action">🧪 Test</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="arrow">➜</div>
-
-</a>
-
-<a href="chapter.html?id=timber" class="chapter-card">
-
-<div class="left">
-
-<div class="icon">🌲</div>
-
-<div class="info">
-
-<h2>Timber</h2>
-
-<p>Seasoning, Defects & Preservation</p>
-
-<div class="action-bar">
-
-<span class="action">📖 Notes</span>
-<span class="action">📄 PDF</span>
-<span class="action">❓ MCQ</span>
-<span class="action">🧪 Test</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="arrow">➜</div>
-
-</a>
-
-<a href="chapter.html?id=steel" class="chapter-card">
-
-<div class="left">
-
-<div class="icon">🔩</div>
-
-<div class="info">
-
-<h2>Steel</h2>
-
-<p>Types, Properties & Uses</p>
-
-<div class="action-bar">
-
-<span class="action">📖 Notes</span>
-<span class="action">📄 PDF</span>
-<span class="action">❓ MCQ</span>
-<span class="action">🧪 Test</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="arrow">➜</div>
-
-</a>
-
-<a href="chapter.html?id=glass" class="chapter-card">
-
-<div class="left">
-
-<div class="icon">🪟</div>
-
-<div class="info">
-
-<h2>Glass</h2>
-
-<p>Types & Applications</p>
-
-<div class="action-bar">
-
-<span class="action">📖 Notes</span>
-<span class="action">📄 PDF</span>
-<span class="action">❓ MCQ</span>
-<span class="action">🧪 Test</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="arrow">➜</div>
-
-</a>
-
-<a href="chapter.html?id=paints" class="chapter-card">
-
-<div class="left">
-
-<div class="icon">🎨</div>
-
-<div class="info">
-
-<h2>Paints & Varnishes</h2>
-
-<p>Composition, Properties & Uses</p>
-
-<div class="action-bar">
-
-<span class="action">📖 Notes</span>
-<span class="action">📄 PDF</span>
-<span class="action">❓ MCQ</span>
-<span class="action">🧪 Test</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="arrow">➜</div>
-
-</a>
-
-<a href="chapter.html?id=misc" class="chapter-card">
-
-<div class="left">
-
-<div class="icon">🧪</div>
-
-<div class="info">
-
-<h2>Miscellaneous Materials</h2>
-
-<p>Bitumen, Plastics & Modern Materials</p>
-
-<div class="action-bar">
-
-<span class="action">📖 Notes</span>
-<span class="action">📄 PDF</span>
-<span class="action">❓ MCQ</span>
-<span class="action">🧪 Test</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="arrow">➜</div>
-
-</a>
-
-<a href="ssc-je.html" class="back-btn">
-⬅ Back to SSC JE Subjects
 </a>
 
 </div>
 
-<script>
+<div class="subject-card">
 
-const search=document.getElementById("searchBox");
+<div class="subject-icon">🧱</div>
 
-search.addEventListener("keyup",function(){
+<h3>Cement</h3>
 
-const value=this.value.toLowerCase();
+<p>
 
-document.querySelectorAll(".chapter-card").forEach(card=>{
+Types,
+Manufacturing,
+Tests.
 
-const text=card.innerText.toLowerCase();
+</p>
 
-card.style.display=text.includes(value)?"flex":"none";
+<a href="#" class="badge">
 
-});
+Coming Soon
 
-});
+</a>
 
-</script>
+</div>
+
+<div class="subject-card">
+
+<div class="subject-icon">🟡</div>
+
+<h3>Lime</h3>
+
+<p>
+
+Classification,
+Manufacturing,
+Uses.
+
+</p>
+
+<a href="#" class="badge">
+
+Coming Soon
+
+</a>
+
+</div>
+<div class="subject-card">
+
+<div class="subject-icon">🪵</div>
+
+<h3>Timber</h3>
+
+<p>
+
+Types, Properties,
+Seasoning &
+Defects.
+
+</p>
+
+<a href="#" class="badge">
+
+Coming Soon
+
+</a>
+
+</div>
+
+<div class="subject-card">
+
+<div class="subject-icon">🔩</div>
+
+<h3>Steel</h3>
+
+<p>
+
+Types,
+Properties,
+Uses.
+
+</p>
+
+<a href="#" class="badge">
+
+Coming Soon
+
+</a>
+
+</div>
+
+<div class="subject-card">
+
+<div class="subject-icon">🪟</div>
+
+<h3>Glass</h3>
+
+<p>
+
+Types,
+Manufacturing,
+Properties.
+
+</p>
+
+<a href="#" class="badge">
+
+Coming Soon
+
+</a>
+
+</div>
+
+<div class="subject-card">
+
+<div class="subject-icon">🎨</div>
+
+<h3>Paints</h3>
+
+<p>
+
+Constituents,
+Types &
+Uses.
+
+</p>
+
+<a href="#" class="badge">
+
+Coming Soon
+
+</a>
+
+</div>
+
+<div class="subject-card">
+
+<div class="subject-icon">🛣️</div>
+
+<h3>Bitumen</h3>
+
+<p>
+
+Properties,
+Grades &
+Applications.
+
+</p>
+
+<a href="#" class="badge">
+
+Coming Soon
+
+</a>
+
+</div>
+
+<div class="subject-card">
+
+<div class="subject-icon">🏠</div>
+
+<h3>Miscellaneous</h3>
+
+<p>
+
+Plastics,
+Asbestos,
+Gypsum &
+Other Materials.
+
+</p>
+
+<a href="#" class="badge">
+
+Coming Soon
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h2>🏗️ Civil Success</h2>
+
+<p>
+
+Building Materials Notes for SSC JE & RRB JE
+
+</p>
+
+<p>
+
+© 2025 Civil Success
+
+</p>
+
+</footer>
 
 </body>
 
